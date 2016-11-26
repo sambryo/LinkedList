@@ -99,13 +99,49 @@ public class LinkedList {
         }
         return n;
     }
+
+// Finding the node which starts the loop
+    public static Node LoopStarterNode(LinkedList head){
+        LinkedList slow = head;
+        LinkedList fast = head;
+
+        while (fast ! = null || fast.next != null){
+            slow = slow.next;
+            fast = fast.next;
+
+            if (slow == fast){
+                break;
+            }
+        }
+
+        //checking Error
+
+        if (fast == null || fast.next == null){
+            return null;
+        }
+
+
+        // here is the magic.
+        slow = head;
+        while (slow != fast){
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        // return either the fast or slow. both pointing same node
+
+        return fast;
+
+
+    }
 }
-class Node{
+class Node {
     int data;
     Node next = null;
 
 
-    public Node (int d){
+    public Node(int d) {
         data = d;
     }
+
 }
