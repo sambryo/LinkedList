@@ -11,6 +11,10 @@ public class LinkedList {
         //head.next = null;
     }
     public static void main (String[] args ){
+	// Example :- creating a node with a randome number [3,4,6] 
+
+
+	System.out.println("This code might have multiple methods to play with linked list practice problem");
         Node newNode = new Node (3);
         Node next1= new Node (4);
         Node next2 = new Node (6);
@@ -56,6 +60,15 @@ public class LinkedList {
 
         return result;
 
+    }
+    public static int addNodeData (Node head){
+        int sum = 0;
+        while (head != null){
+            sum += head.data;
+            head = head.next;
+        }
+
+        return sum;
     }
 
 
