@@ -11,6 +11,7 @@ public class LinkedList {
         //head.next = null;
     }
     public static void main (String[] args ){
+	// Example :- creating a node with a randome number [3,4,6] 
         Node newNode = new Node (3);
         Node next1= new Node (4);
         Node next2 = new Node (6);
