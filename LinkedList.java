@@ -114,6 +114,7 @@ public class LinkedList {
     }
 
 // Finding the node which starts the loop
+	// There are two pointers, LinkedList runner Pointer.
     public static Node LoopStarterNode(LinkedList head){
         LinkedList slow = head;
         LinkedList fast = head;
