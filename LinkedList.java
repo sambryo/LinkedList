@@ -61,6 +61,15 @@ public class LinkedList {
         return result;
 
     }
+    public static int addNodeData (Node head){
+        int sum = 0;
+        while (head != null){
+            sum += head.data;
+            head = head.next;
+        }
+
+        return sum;
+    }
 
 
     public static String display2 (Node head) {
