@@ -12,6 +12,9 @@ public class LinkedList {
     }
     public static void main (String[] args ){
 	// Example :- creating a node with a randome number [3,4,6] 
+
+
+	System.out.println("This code might have multiple methods to play with linked list practice problem");
         Node newNode = new Node (3);
         Node next1= new Node (4);
         Node next2 = new Node (6);
